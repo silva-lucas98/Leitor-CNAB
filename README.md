@@ -33,17 +33,17 @@ Aplicação para fazer upload arquivos CNAB, ler e interpretar dados, salvar no 
         pip install -r requirements.txt
         ```
 
-* Executando Migrações
+    * Executando Migrações
 
-    ```
-    python manage.py migrate
-    ```
+        ```
+        python manage.py migrate
+        ```
 
-* Executando Aplicação
+    * Executando Aplicação
 
-    ```
-    python manage.py runserver
-    ```
+        ```
+        python manage.py runserver
+        ```
 
 * Rotas da Aplicação
 
