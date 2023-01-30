@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        div {
+            width: 18.75rem;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            border: solid 1px black;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .store {
+            font-size: 1.25rem;
+        }
+
+        .owner {
+            font-size: 1.1rem;
+        }
+
+        .value {
+            color: red;
+        }
+    </style>
+    <title>List Stores</title>
+  </head>
+  <body>
+    {% for store in data_stores %}
+    <div>
+        <p class="store">Loja: {{ store.store }}</p>
+        <p class="owner">Dono: {{ store.owner }}</p>
+        <p class="value">Saldo: R$ {{ store.total }}</p>
+    </div>
+    {% endfor %}
+  </body>
+</html>

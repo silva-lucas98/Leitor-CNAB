@@ -13,8 +13,8 @@ def handle_uploaded_file(request):
             "cpf": string[19:30],
             "card": string[30:42],
             "hour": string[42:48],
-            "owner": string[48:62],
-            "store": string[62:80],
+            "owner": string[48:62].strip(),
+            "store": string[62:80].strip(),
         }
 
         instance = Transaction.objects.create(**data)
